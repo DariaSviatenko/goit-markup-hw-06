@@ -82,12 +82,12 @@
             </div>
             <div class="form-field" >
               <label for="comment">Комментарий</label>
-              <textarea name="comment" id="comment" rows="8" placeholder="Введите текст" ></textarea>
+              <textarea class="form-field-comment" name="comment" id="comment" rows="8" placeholder="Введите текст" ></textarea>
             </div>
-          
+          <div class="form-field-checkbox">
               <input type="checkbox" name="contract" value="agreement" id="agreement" />
               <label for="agreement"> Соглашаюсь с рассылкой и принимаю Условия договора</label>
-            
+            </div>
               <button type="submit">Отправить</button>
             </form>
           </div>
@@ -439,6 +439,18 @@
           </li>
         </ul>
       </div>
+      <form class="footer-form">
+        <p class="form-footer-name">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+      <div class="footer-form-field">
+        <label for="mail"></label>
+        <input type="email" name="mail" id="mail" placeholder="E-mail"/>
+      </div>
+      <button class="footer-email" type="submit">Подписаться 
+        <svg class="footer-email-send" width="24px" height="24px">
+          <use href="./images/modal-footer.svg#icon-icon-send"></use>
+        </svg>
+      </button>
+    </form>
     </div>
   </footer>
   <script src="./js/modal.js"></script>
