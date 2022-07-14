@@ -70,7 +70,12 @@
               <p class="form-title" >Оставьте свои данные, мы вам перезвоним</p>
               <div class="form-field" >
               <label for="name">Имя</label>
-              <input type="text" name="name" id="name" autofocus/> 
+              <input type="text" name="name" id="name"/> 
+              <span class="form-icon"> 
+                <svg width="12px" height="12px">
+                  <use href="./images/modal-footer.svg#icon-name" > </use>
+                </svg>
+              </span>
             </div>
             <div class="form-field" >
               <label for="tel">Телефон</label>
@@ -85,8 +90,12 @@
               <textarea class="form-field-comment" name="comment" id="comment" rows="8" placeholder="Введите текст" ></textarea>
             </div>
           <div class="form-field-checkbox">
-              <input type="checkbox" name="contract" value="agreement" id="agreement" />
-              <label for="agreement"> Соглашаюсь с рассылкой и принимаю <a class="form-field-checkbox-link" href="#"> Условия договора</a></label>
+            <label class="label-checkbox">
+              <input class="checkbox" type="checkbox" name="contract" value="agreement"  />
+              <span class="checkbox-icon" > 
+              </span>
+              Соглашаюсь с рассылкой и принимаю&nbsp;<a class="form-field-checkbox-link" href="#"> Условия договора</a>
+             </label>
             </div>
             <div class="form-field-submit" >
               <button class="submit" type="submit">Отправить</button>
@@ -446,12 +455,13 @@
       <div class="footer-form-field">
         <label for="mail"></label>
         <input type="email" name="mail" id="mail" placeholder="E-mail"/>
+        <button class="footer-email" type="submit">Подписаться 
+          <svg class="footer-email-send" width="24px" height="24px">
+            <use href="./images/modal-footer.svg#icon-icon-send"></use>
+          </svg>
+        </button>
       </div>
-      <button class="footer-email" type="submit">Подписаться 
-        <svg class="footer-email-send" width="24px" height="24px">
-          <use href="./images/modal-footer.svg#icon-icon-send"></use>
-        </svg>
-      </button>
+     
     </form>
     </div>
   </footer>
