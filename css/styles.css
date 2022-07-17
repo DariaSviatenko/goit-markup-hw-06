@@ -393,7 +393,7 @@ p {
   letter-spacing: 0.06em;
   cursor: pointer;
   padding: 10px 55px 10px 56px;
-  margin: 30px;
+  margin-top: 30px;
   position: absolute;
   left: 25%;
   color: var(--secondory-color);
@@ -408,13 +408,11 @@ p {
 }
 
 .form-icon {
-  display: flex;
   position: absolute;
   left: 12px;
   top: 50%;
   width: 18px;
   height: 18px;
-  padding: 3px;
   background-size: contain;
   align-items: center;
 }
